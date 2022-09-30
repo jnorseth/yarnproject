@@ -5,9 +5,9 @@ const yarnsController = require('../controllers/yarns');
 
 
 //read yarns
-router.get('/', yarnsController.getAll);
+router.get('/', yarnsController.getAllYarns);
 
-router.get('/:id', yarnsController.getSingle);
+router.get('/:id', yarnsController.getSingleYarn);
 
 // create yarns
 router.post('/', yarnsController.createYarn);

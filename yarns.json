@@ -1,0 +1,12 @@
+{
+{"_id":{"$oid":"63364027c6b4ac6ca4d33de8"},"colors":["Sage","Sunshine","Off-white"],"yarnName":"Simply Soft Solids","yarnBrand":"Caron","size":"170 g / 6 oz, 288 meters / 315 yards","recHookNeedleSize":{"needleSize":"5mm","hookSize":"5mm"},"weight":{"$numberInt":"4"},"fiberType":"Acrylic"},
+
+{"_id":{"$oid":"6336406cc6b4ac6ca4d33de9"},"yarnName":"One Pound","yarnBrand":"Caron","size":"454g / 16 oz, 742 meters / 812 yards","recHookNeedleSize":{"needleSize":"5mm","hookSize":"5mm"},"colors":["Midnight Blue","Ocean","Off-white","Canal"],"weight":{"$numberInt":"4"},"fiberType":"Acrylic"},
+
+{"_id":{"$oid":"633640a4c6b4ac6ca4d33dea"},"yarnName":"Homespun","yarnBrand":"Lion Brand","size":"170g / 6 oz, 169 meters / 185 yards","recHookNeedleSize":{"needleSize":"6.5mm","hookSize":"6mm"},"colors":["Wild Fire","Waterfall","Clouds","Golden"],"weight":{"$numberInt":"6"},"fiberType":"98% Acrylic, 2% Polyester"},
+
+{"_id":{"$oid":"63360235b963f0eec918ac64"},"yarnName":"24/7 Cotton","yarnBrand":"Lion Brand","size":"100g / 3.5 oz, 170 meters / 186 yards","recHookNeedleSize":{"needleSize":"4mm","hookSize":"4mm"},"colors":["Amber","Pink Lemonade","Cafe Au Lait","Charcoal","Beets"],"weight":{"$numberInt":"4"},"fiberType":"Cotton"},
+
+{"_id":{"$oid":"633602feb963f0eec91b2b6c"},"yarnName":"Blanket Yarn","yarnBrand":"Bernet","size":"300g / 10.5 oz, 201 meters / 220 yards","recHookNeedleSize":{"needleSize":"8mm","hookSize":"8mm"},"colors":["Misty Gray","Merlot"],"weight":{"$numberInt":"6"},"fiberType":"100% polyester"}
+
+}
