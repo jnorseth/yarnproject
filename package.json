@@ -1,0 +1,29 @@
+{
+  "name": "yarnproject",
+  "version": "1.0.0",
+  "description": "a database of yarn brands and their qualities and patterns that can be used with types of yarn",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devstart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnorseth/yarnproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnorseth/yarnproject/issues"
+  },
+  "homepage": "https://github.com/jnorseth/yarnproject#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongodb": "^4.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
