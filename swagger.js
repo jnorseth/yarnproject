@@ -6,8 +6,8 @@ const doc = {
     title: 'My API',
     description: 'Yarn API',
   },
-  host: 'projectyarn.onrender.com',
-  schemes: ['http'],
+  host: 'cse341-norseth.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';

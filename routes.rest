@@ -21,27 +21,30 @@ POST http://localhost:8001/yarns HTTP/1.1
 
 # PUT request that updates an existing contact with ID 632a0aa66fb797661375f88a
 # Format expected is more or less like the POST request
-PUT http://localhost:8000/contacts/632a5aa6b963f0eec99ff51b HTTP/1.1
+PUT http://localhost:8001/yarns/6336406cc6b4ac6ca4d33de9 HTTP/1.1
 
 # DELETE request that deletes an existing contact with ID 632a0aa66fb797661375f88a
-DELETE http://localhost:3000/contacts/632a0acc825924792b0b095a HTTP/1.1
+DELETE http://localhost:8001/yarns/6338907bc1756100a09d624a HTTP/1.1
 
 
 
 # Same requests but on render
-GET https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+GET https://projectyarn.onrender.com/contacts/ HTTP/1.1
 
-GET https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+GET https://projectyarn.onrender.com/contacts/ HTTP/1.1
 
-POST https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+POST https://projectyarn.onrender.com/contacts/ HTTP/1.1
 {
-    "firstName": "Marianne",
-    "lastName": "Norseth",
-    "email": "annie@norseth.com",
-    "favoriteColor": "purple",
-    "birthday": "5/21/2019"
+"yarnName":"Wool of The Andes",
+"yarnBrand":"Knit Picks",
+"size":"50g / 1.75 oz, 91 meters / 100 yards",
+"recHookNeedleSize":
+{"needleSize":"6-9 needles","hookSize":"I-K hooks"},
+"colors":["Lullaby","Nightshade","Papaya"],
+"weight":4,
+"fiberType":"Wool"
 }
 
-PUT https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+PUT https://projectyarn.onrender.com/contacts/ HTTP/1.1
 
 DELETE https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
