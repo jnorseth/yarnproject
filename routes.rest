@@ -8,11 +8,14 @@ GET http://localhost:8001/yarns/63364027c6b4ac6ca4d33de8 HTTP/1.1
 
 # Format expected:
 # {
-#     "firstName": "Ninja",
-#     "lastName": "Amoodi",
-#     "email": "ninjaamoodi@gmail.com",
-#     "favoriteColor": "Green",
-#     "birthday": "11/11/2021"
+# "yarnName":"Wool of The Andes",
+# "yarnBrand":"Knit Picks",
+# "size":"50g / 1.75 oz, 91 meters / 100 yards",
+# "recHookNeedleSize":
+# {"needleSize":"6-9 needles","hookSize":"I-K hooks"},
+# "colors":["Lullaby","Nightshade","Papaya"],
+# "weight":4,
+# "fiberType":"Wool"
 # }
 POST http://localhost:8001/yarns HTTP/1.1
 
