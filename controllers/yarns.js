@@ -23,10 +23,10 @@ const createYarn = async (req, res) => {
     yarnName: req.body.yarnName,
     yarnBrand: req.body.yarnBrand,
     weight: req.body.weight,
-    recNeedleHookSize: req.body.recNeedleHookSize,
+    recHookNeedleSize: req.body.recHookNeedleSize,
     colors: req.body.colors,
     size: req.body.size,
-    fiberType: req.body.yardage
+    fiberType: req.body.fiberType
   };
   const response = await mongodb.getDb().db('projectyarn').collection('yarns').insertOne(yarn);
   if (response.acknowledged) {
@@ -44,10 +44,10 @@ const updateYarn = async (req, res) => {
     yarnName: req.body.yarnName,
     yarnBrand: req.body.yarnBrand,
     weight: req.body.weight,
-    recNeedleHookSize: req.body.recNeedleHookSize,
+    recHookNeedleSize: req.body.recHookNeedleSize,
     colors: req.body.colors,
     size: req.body.size,
-    fiberType: req.body.yardage
+    fiberType: req.body.fiberType
   };
   const response = await mongodb
     .getDb()

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const patternValidation = require('../validation');
 const patternsController = require('../controllers/patterns');
 
 

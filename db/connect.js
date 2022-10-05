@@ -2,8 +2,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 const MongoClient = require('mongodb').MongoClient;
 
-let _db;
 
+
+let _db;
+const url = process.env.MONGODB_URI;
 const initDb = (callback) => {
   if (_db) {
     console.log('Db is already initialized!');
@@ -30,5 +32,6 @@ const getDb = () => {
 
 module.exports = {
   initDb,
-  getDb
+  getDb,
+  url
 };

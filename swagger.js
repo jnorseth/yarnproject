@@ -6,10 +6,9 @@ const doc = {
     title: 'My API',
     description: 'Yarn API',
   },
-  host: 'cse341-norseth.onrender.com',
-  schemes: ['https'],
+  host: 'localhost:8001',
+  schemes: ['http'],
 };
-
 const outputFile = './swagger.json';
 const endpointsFiles = ['./routes/index.js'];
 
