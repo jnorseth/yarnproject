@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const patternValidation = require('../validation');
+const schemas = require('../models/joi'); 
+const middleware = require('../middleware/joi'); 
 const patternsController = require('../controllers/patterns');
 
 
@@ -10,10 +11,10 @@ router.get('/', patternsController.getAllPatterns);
 router.get('/:id', patternsController.getSinglePattern);
 
 // create patterns
-router.post('/', patternsController.createPattern);
+router.post('/', middleware(schemas.patternSchema), patternsController.createPattern);
 
 //update pattern
-router.put('/:id', patternsController.updatePattern);
+router.put('/:id', middleware(schemas.patternSchema), patternsController.updatePattern);
 
 //delete pattern
 router.delete('/:id', patternsController.deletePattern);

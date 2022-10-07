@@ -5,12 +5,19 @@
     "description": "Yarn API",
     "version": "1.0.0"
   },
-  "host": "projectyarn.onrender.com",
+  "host": "https://projectyarn.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/yarns/": {
       "get": {
         "description": "",
@@ -42,7 +49,7 @@
                 "weight": {
                   "example": "any"
                 },
-                "recNeedleHookSize": {
+                "recHookNeedleSize": {
                   "example": "any"
                 },
                 "colors": {
@@ -51,7 +58,7 @@
                 "size": {
                   "example": "any"
                 },
-                "yardage": {
+                "fiberType": {
                   "example": "any"
                 }
               }
@@ -59,8 +66,14 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "201": {
             "description": "Created"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
@@ -112,7 +125,7 @@
                 "weight": {
                   "example": "any"
                 },
-                "recNeedleHookSize": {
+                "recHookNeedleSize": {
                   "example": "any"
                 },
                 "colors": {
@@ -121,7 +134,7 @@
                 "size": {
                   "example": "any"
                 },
-                "yardage": {
+                "fiberType": {
                   "example": "any"
                 }
               }
@@ -129,8 +142,14 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "204": {
             "description": "No Content"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
@@ -196,8 +215,14 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "201": {
             "description": "Created"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
@@ -257,8 +282,14 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "204": {
             "description": "No Content"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
